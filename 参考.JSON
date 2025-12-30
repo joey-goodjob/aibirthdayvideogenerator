@@ -1,0 +1,376 @@
+{
+  "page": {
+    "show_sections": [
+      "hero",
+      "introduce",
+      "benefits",
+      "usage",
+      "features",
+      "testimonials",
+      "faq",
+      "cta",
+      "logos"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Create Heartfelt Birthday Videos in Minutes",
+        "highlight_text": "Birthday Videos",
+        "description": "<p>No editing skills? No problem. Turn your birthday message into a beautiful 5-12 second video clip. Just describe the vibe, add an optional photo, and let AI do the magic. Share instantly with anyone, anywhere.</p>",
+        "buttons": [
+          {
+            "title": "Create Birthday Video",
+            "icon": "Sparkles",
+            "url": "/pricing",
+            "target": "_self",
+            "variant": "default"
+          }
+        ],
+        "show_avatars": true,
+        "avatars_tip": "Join thousands creating birthday surprises",
+        "show_award": false,
+        "video": {
+          "src": "https://pub-387a24462b7d44e395219fe1c8295ad7.r2.dev/videos/873915363922d9807e831d7350e432f8.mp4"
+        },
+        "background_image": {
+          "src": "/imgs/features/birthday-intro.png",
+          "alt": "Birthday celebration background"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "Why Choose Our AI Birthday Video Maker?",
+        "label": "Built for Quick, Personal Greetings",
+        "description": "Most birthday tools expect you to be a video editor. We don't. Just write your message, pick a style, and generate. Perfect for last-minute surprises, long-distance wishes, or simply showing someone you care.",
+        "image": {
+          "src": "/imgs/features/birthday-20.png",
+          "alt": "Birthday video creation process"
+        },
+        "items": [
+          {
+            "title": "Text-First Creation",
+            "description": "Write a short birthday greeting with the mood you want—sweet, funny, elegant, or playful. Our AI transforms your words into a 5-12 second video without any timeline or complex controls.",
+            "icon": "RiEditLine",
+            "image": {
+              "src": "https://picsum.photos/seed/birthday-text/600/400",
+              "alt": "Text to video feature"
+            }
+          },
+          {
+            "title": "Add a Personal Photo",
+            "description": "Upload a favorite photo to make your video feel like a treasured memory. The AI uses your image as a starting point while keeping the creation process simple.",
+            "icon": "RiImageLine",
+            "image": {
+              "src": "https://picsum.photos/seed/birthday-photo/600/400",
+              "alt": "Photo to video feature"
+            }
+          },
+          {
+            "title": "Perfect for Everyone",
+            "description": "From kids' birthdays to workplace celebrations, from partners to grandparents—create videos that fit any relationship and share them on messages, stories, or group chats.",
+            "icon": "RiHeartLine",
+            "image": {
+              "src": "https://picsum.photos/seed/birthday-everyone/600/400",
+              "alt": "Birthday videos for everyone"
+            }
+          },
+          {
+            "title": "Quick Iterations",
+            "description": "Not quite right? Change one word—the name, the joke, or the theme—and regenerate. Our tool is designed for fast tweaks when every minute counts.",
+            "icon": "RiRefreshLine",
+            "image": {
+              "src": "https://picsum.photos/seed/birthday-iterate/600/400",
+              "alt": "Quick video iterations"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "Benefits for Our AI Birthday Video Maker",
+        "label": "Real Value for Real Moments",
+        "description": "Birthday videos shouldn't require a production team. Our AI Birthday Video Maker keeps things simple: generate, review, and share. No complicated exports, no timeline editing—just the essentials for heartfelt moments.",
+        "items": [
+          {
+            "title": "From Idea to Video in Minutes",
+            "description": "When you only have a message and a deadline, we help you produce a beautiful birthday clip quickly. Perfect for last-minute surprises, time-zone gifts, and spontaneous celebrations.",
+            "icon": "RiTimerLine",
+            "image": {
+              "src": "/imgs/features/birthday-intro.png",
+              "alt": "Fast video creation"
+            }
+          },
+          {
+            "title": "Personal Without the Complexity",
+            "description": "Use text only when you prefer privacy, or add a single photo when you want more warmth. The flexibility means you choose what feels comfortable for each occasion.",
+            "icon": "RiShieldCheckLine",
+            "image": {
+              "src": "https://picsum.photos/seed/birthday-personal/800/500",
+              "alt": "Personal and private"
+            }
+          },
+          {
+            "title": "Perfect for Social Sharing",
+            "description": "A 5-12 second video is easy to send and rewatch. It fits perfectly in DMs, Instagram stories, WhatsApp status, and small celebrations without overwhelming anyone's feed.",
+            "icon": "RiShareLine",
+            "image": {
+              "src": "https://picsum.photos/seed/birthday-share/800/500",
+              "alt": "Easy social sharing"
+            }
+          }
+        ]
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "How It Works",
+        "description": "Create your birthday video in four simple steps. No learning curve, no tutorials needed—just write, generate, and share.",
+        "image": {
+          "src": "https://picsum.photos/seed/birthday-steps/600/400",
+          "alt": "How to create birthday video"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "Step 1: Write Your Message",
+            "description": "Enter the recipient's name, your relationship, and the vibe you want. Something like \"for Mom, warm and grateful, golden lighting\" works perfectly.",
+            "image": {
+              "src": "https://picsum.photos/seed/birthday-step1/600/400",
+              "alt": "Write birthday message"
+            }
+          },
+          {
+            "title": "Step 2: Add a Photo (Optional)",
+            "description": "Upload a photo if you want the video to feel more personal. Skip this step if you prefer a text-only creation—the AI works great either way.",
+            "image": {
+              "src": "https://picsum.photos/seed/birthday-step2/600/400",
+              "alt": "Upload photo optional"
+            }
+          },
+          {
+            "title": "Step 3: Choose Your Style",
+            "description": "Pick a theme in your wording: cute, elegant, playful, minimalist, or festive. The AI uses your description to shape the look and motion of your video.",
+            "image": {
+              "src": "https://picsum.photos/seed/birthday-step3/600/400",
+              "alt": "Choose video style"
+            }
+          },
+          {
+            "title": "Step 4: Generate & Share",
+            "description": "Watch your video, then share it directly or download for later. Not perfect? Tweak your message and regenerate until it feels just right.",
+            "image": {
+              "src": "https://picsum.photos/seed/birthday-step4/600/400",
+              "alt": "Generate and share video"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "Core Features for Our AI Birthday Video Maker",
+        "description": "We focus on what matters most: helping you create heartfelt birthday videos quickly and easily. No bloat, no complex editing tools—just the essentials done right.",
+        "items": [
+          {
+            "title": "Text-to-Video Generation",
+            "description": "Turn your birthday message into a 5-12 second video clip. Just describe what you want, and our AI brings your words to life.",
+            "icon": "RiEditLine"
+          },
+          {
+            "title": "Photo-to-Video Option",
+            "description": "Add a cherished photo to anchor your video. Great for making the greeting feel like a memory they'll treasure.",
+            "icon": "RiImageAddLine"
+          },
+          {
+            "title": "Style Control via Prompts",
+            "description": "Describe the style in plain language—sweet, humorous, calm, bright, or elegant. No sliders or settings, just your words.",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "Fast Regeneration",
+            "description": "Change one detail and generate again. Perfect for iterating until your video matches exactly what you envisioned.",
+            "icon": "RiLoopLeftLine"
+          },
+          {
+            "title": "Short & Shareable Format",
+            "description": "5-12 second videos are perfect for messaging apps, social stories, and quick greetings that don't overstay their welcome.",
+            "icon": "RiMovieLine"
+          },
+          {
+            "title": "Browser-Based Workflow",
+            "description": "No app downloads, no software installs. Create birthday videos right in your browser on desktop or mobile.",
+            "icon": "RiGlobalLine"
+          }
+        ]
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "What Our Users Say",
+        "description": "Real stories from people using our AI Birthday Video Maker for family celebrations, friend surprises, and workplace moments.",
+        "items": [
+          {
+            "name": "Maya",
+            "role": "Long-distance Partner",
+            "quote": "I was traveling and needed something meaningful for my partner's birthday. Generated a sweet video in minutes and sent it right away. The reaction was priceless!",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "Maya"
+            }
+          },
+          {
+            "name": "Ethan",
+            "role": "Dad of Two",
+            "quote": "My kids and I wrote a funny message together and added a family photo. The video came out so good that my daughter watched it over and over!",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "Ethan"
+            }
+          },
+          {
+            "name": "Sofia",
+            "role": "Friend Group Organizer",
+            "quote": "I'm always the last-minute planner. This tool saved me from scrambling—made a birthday clip in our group chat without any editing apps!",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "Sofia"
+            }
+          },
+          {
+            "name": "Marcus",
+            "role": "Team Lead",
+            "quote": "For our teammate's birthday, I wanted something professional but warm. Got a clean video in minutes that everyone loved in our Slack channel.",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "Marcus"
+            }
+          },
+          {
+            "name": "Rachel",
+            "role": "Content Creator",
+            "quote": "Short-form is my thing, so 5-12 seconds is perfect. I tested a few vibes with quick prompt tweaks and picked the best one for my mom's birthday story.",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "Rachel"
+            }
+          },
+          {
+            "name": "James",
+            "role": "College Student",
+            "quote": "I didn't want to learn video editing just for one birthday post. Wrote my message, hit generate, and had something shareable in minutes!",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "James"
+            }
+          },
+          {
+            "name": "Lisa",
+            "role": "HR Coordinator",
+            "quote": "I handle birthday celebrations for our whole team. This tool is a lifesaver—I can create personalized videos for each person without spending hours on each one.",
+            "image": {
+              "src": "/imgs/avatars/7.png",
+              "alt": "Lisa"
+            }
+          },
+          {
+            "name": "David",
+            "role": "International Student",
+            "quote": "Living abroad, I can't be there for my grandparents' birthdays. Made a heartfelt video with our old family photo—grandma cried happy tears when she saw it!",
+            "image": {
+              "src": "/imgs/avatars/8.png",
+              "alt": "David"
+            }
+          },
+          {
+            "name": "Emma",
+            "role": "New Mom",
+            "quote": "Created my baby's first birthday video using photos from the past year. It turned out so beautiful that I'm keeping it as a keepsake forever!",
+            "image": {
+              "src": "/imgs/avatars/9.png",
+              "alt": "Emma"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "FAQ about AI Birthday Video Maker",
+        "description": "Everything you need to know about creating birthday videos with our AI tool.",
+        "items": [
+          {
+            "question": "What is an AI Birthday Video Maker?",
+            "answer": "It's a tool that generates short birthday videos (5-12 seconds) from your text message, and optionally from a photo you upload. Instead of editing on a timeline, you describe what you want and the AI creates it for you."
+          },
+          {
+            "question": "Can I create a video from a photo?",
+            "answer": "Yes! You can upload a photo as an optional starting point. The AI uses it to make your video feel more personal. If you prefer, you can skip the photo and create from text alone."
+          },
+          {
+            "question": "How long are the videos?",
+            "answer": "Our videos are 5-12 seconds long—perfect for messaging apps, social media stories, and quick birthday greetings that are easy to watch and share."
+          },
+          {
+            "question": "Do I need video editing skills?",
+            "answer": "Not at all! The tool is designed for people who don't want to learn complex editing software. Just write your birthday message, choose a style, and generate."
+          },
+          {
+            "question": "Can I edit the video after generation?",
+            "answer": "We focus on generation, not editing. If you want to add subtitles, trim, or make other edits, you can download the video and use tools like CapCut, Canva, or Premiere."
+          },
+          {
+            "question": "How do I control the video style?",
+            "answer": "Describe what you want in plain words: 'warm and cozy', 'fun and playful', 'elegant and minimal'. The AI interprets your description and creates a matching video."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Create Your Birthday Video Now",
+        "description": "Write your message, add a photo if you like, and generate a heartfelt 5-12 second birthday greeting in minutes. No editing skills required.",
+        "buttons": [
+          {
+            "title": "Get Started",
+            "url": "/pricing",
+            "target": "_self",
+            "icon": "Sparkles"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "logos": {
+        "block": "logos",
+        "id": "logos",
+        "items": [
+          {
+            "title": "Featured on ToolJunction",
+            "url": "https://www.tooljunction.io",
+            "target": "_blank",
+            "image": {
+              "src": "https://ik.imagekit.io/or8e5hp54/tj/badge.svg",
+              "alt": "Featured on ToolJunction",
+              "className": "h-[60px] w-auto"
+            }
+          }
+        ]
+      },
+      "subscribe": {
+        "id": "subscribe",
+        "title": "Get Birthday Video Ideas",
+        "description": "Subscribe for creative prompts, seasonal themes, and tips to make your birthday videos even more memorable.",
+        "submit": {
+          "input": {
+            "placeholder": "Your email address"
+          },
+          "button": {
+            "title": "Subscribe"
+          },
+          "action": "/api/subscribe"
+        },
+        "className": "bg-muted"
+      }
+    }
+  }
+}

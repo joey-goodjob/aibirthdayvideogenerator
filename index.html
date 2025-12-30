@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- SEO 元数据 -->
+    <title>
+      Create Heartfelt Birthday Videos in Minutes | AI Birthday Video Maker
+    </title>
+    <meta
+      name="description"
+      content="No editing skills? No problem. Turn your birthday message into a beautiful 5-12 second video clip. Just describe the vibe, add an optional photo, and let AI do the magic."
+    />
+    <link rel="canonical" href="https://your-domain.com" />
+
+    <!-- Open Graph 社交媒体分享 -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Create Heartfelt Birthday Videos in Minutes"
+    />
+    <meta
+      property="og:description"
+      content="Turn your birthday message into a beautiful 5-12 second video clip. No editing skills needed."
+    />
+    <meta property="og:url" content="https://your-domain.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <style>
+      /* CSS 变量定义 - 用于统一管理颜色主题 */
+      :root {
+        --bg: #0b0f19;
+        --card: #111827;
+        --muted: #9ca3af;
+        --text: #e5e7eb;
+        --accent: #22c55e;
+        --muted-bg: rgba(17, 24, 39, 0.5);
+      }
+
+      /* 基础样式重置 */
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial,
+          sans-serif;
+        background: linear-gradient(180deg, #070a12, #0b0f19);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      /* 主容器 - 限制最大宽度并居中 */
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 18px 70px;
+      }
+
+      /* 章节间距 */
+      .section {
+        margin-top: 60px;
+      }
+
+      /* 背景变暗的章节 */
+      .bg-muted {
+        background: var(--muted-bg);
+        padding: 40px 18px;
+        margin: 60px -18px 0;
+        border-radius: 0;
+      }
+
+      @media (min-width: 860px) {
+        .bg-muted {
+          padding: 60px 40px;
+          margin: 60px -40px 0;
+          border-radius: 24px;
+        }
+      }
+
+      /* 徽章样式 */
+      .badge {
+        display: inline-block;
+        padding: 6px 12px;
+        border: 1px solid #243042;
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: 13px;
+        margin-bottom: 16px;
+      }
+
+      /* 标题样式 */
+      h1 {
+        font-size: 48px;
+        line-height: 1.1;
+        margin: 14px 0 20px;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 32px;
+        margin: 0 0 12px;
+        font-weight: 600;
+      }
+
+      h3 {
+        font-size: 24px;
+        margin: 0 0 10px;
+        font-weight: 600;
+      }
+
+      h4 {
+        font-size: 20px;
+        margin: 0 0 8px;
+        font-weight: 600;
+      }
+
+      /* 段落样式 */
+      p {
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 0 0 16px;
+      }
+
+      /* 高亮文本 */
+      .highlight {
+        color: var(--accent);
+      }
+
+      /* 卡片样式 */
+      .card {
+        background: rgba(17, 24, 39, 0.78);
+        border: 1px solid #1f2a3b;
+        border-radius: 18px;
+        padding: 24px;
+      }
+
+      /* 按钮样式 */
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        transition: all 0.2s;
+        border: none;
+        cursor: pointer;
+      }
+
+      .btn.primary {
+        background: var(--accent);
+        color: #06210f;
+      }
+
+      .btn.primary:hover {
+        background: #16a34a;
+        transform: translateY(-1px);
+      }
+
+      .btn.ghost {
+        border: 1px solid #2b3b52;
+        color: var(--text);
+        background: transparent;
+      }
+
+      .btn.ghost:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+
+      /* 按钮组 */
+      .cta {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 24px;
+      }
+
+      /* Hero 区域样式 */
+      .hero {
+        text-align: center;
+        padding: 60px 0;
+      }
+
+      .hero h1 {
+        font-size: 56px;
+        margin-bottom: 24px;
+      }
+
+      .hero .description {
+        font-size: 18px;
+        max-width: 700px;
+        margin: 0 auto 32px;
+      }
+
+      .hero video {
+        max-width: 100%;
+        border-radius: 16px;
+        margin-top: 40px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      }
+
+      /* 网格布局 */
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 32px;
+      }
+
+      @media (min-width: 860px) {
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .grid.grid-3 {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .grid.grid-4 {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      /* 特性列表项 */
+      .feature-item {
+        padding: 20px;
+        border: 1px solid #223047;
+        border-radius: 14px;
+        background: rgba(17, 24, 39, 0.45);
+      }
+
+      .feature-item img {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 16px;
+      }
+
+      .feature-item h4 {
+        margin-bottom: 8px;
+      }
+
+      /* 步骤列表 */
+      .steps {
+        display: grid;
+        gap: 24px;
+        margin-top: 32px;
+      }
+
+      .step-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: center;
+        padding: 24px;
+        border: 1px solid #223047;
+        border-radius: 16px;
+        background: rgba(17, 24, 39, 0.45);
+      }
+
+      @media (min-width: 860px) {
+        .step-item {
+          grid-template-columns: 200px 1fr;
+        }
+        .step-item.reverse {
+          grid-template-columns: 1fr 200px;
+        }
+        .step-item.reverse .step-content {
+          order: -1;
+        }
+      }
+
+      .step-item img {
+        width: 100%;
+        border-radius: 12px;
+      }
+
+      /* 手风琴样式（用于 benefits） */
+      .accordion {
+        margin-top: 24px;
+      }
+
+      .accordion-item {
+        border: 1px solid #223047;
+        border-radius: 14px;
+        margin-bottom: 12px;
+        background: rgba(17, 24, 39, 0.45);
+        overflow: hidden;
+      }
+
+      .accordion-header {
+        padding: 20px;
+        cursor: pointer;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .accordion-header:hover {
+        background: rgba(17, 24, 39, 0.7);
+      }
+
+      .accordion-content {
+        padding: 0 20px 20px;
+        color: var(--muted);
+        display: none;
+      }
+
+      .accordion-item.active .accordion-content {
+        display: block;
+      }
+
+      .accordion-icon {
+        transition: transform 0.3s;
+      }
+
+      .accordion-item.active .accordion-icon {
+        transform: rotate(180deg);
+      }
+
+      /* 用户评价网格 */
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 32px;
+      }
+
+      @media (min-width: 860px) {
+        .testimonials-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .testimonials-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .testimonial-card {
+        padding: 24px;
+        border: 1px solid #223047;
+        border-radius: 16px;
+        background: rgba(17, 24, 39, 0.45);
+      }
+
+      .testimonial-card img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 16px;
+        object-fit: cover;
+      }
+
+      .testimonial-card .quote {
+        font-style: italic;
+        margin-bottom: 16px;
+        color: var(--text);
+      }
+
+      .testimonial-card .name {
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+
+      .testimonial-card .role {
+        font-size: 14px;
+        color: var(--muted);
+      }
+
+      /* FAQ 样式 */
+      .faq details {
+        border: 1px solid #223047;
+        border-radius: 14px;
+        padding: 16px;
+        margin: 12px 0;
+        background: rgba(17, 24, 39, 0.45);
+      }
+
+      .faq summary {
+        cursor: pointer;
+        font-weight: 600;
+        padding: 4px 0;
+      }
+
+      .faq summary:hover {
+        color: var(--accent);
+      }
+
+      .faq p {
+        margin-top: 12px;
+        padding-left: 8px;
+      }
+
+      /* Logo 区域 */
+      .logos {
+        text-align: center;
+        padding: 40px 0;
+      }
+
+      .logos img {
+        max-height: 60px;
+        width: auto;
+        opacity: 0.8;
+        transition: opacity 0.3s;
+      }
+
+      .logos a:hover img {
+        opacity: 1;
+      }
+
+      /* 标签样式 */
+      .label {
+        display: inline-block;
+        padding: 4px 12px;
+        background: rgba(34, 197, 94, 0.1);
+        color: var(--accent);
+        border-radius: 6px;
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+
+      /* 文本居中 */
+      .text-center {
+        text-align: center;
+      }
+
+      /* 图片样式 */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Footer 样式 */
+      footer {
+        margin-top: 60px;
+        padding-top: 40px;
+        border-top: 1px solid #1f2a3b;
+        color: #6b7280;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      /* 响应式调整 */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 36px;
+        }
+        h2 {
+          font-size: 28px;
+        }
+        .hero h1 {
+          font-size: 40px;
+        }
+      }
+    </style>
+
+    <!-- JSON-LD 结构化数据 - 用于 SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is an AI Birthday Video Maker?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's a tool that generates short birthday videos (5-12 seconds) from your text message, and optionally from a photo you upload. Instead of editing on a timeline, you describe what you want and the AI creates it for you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I create a video from a photo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! You can upload a photo as an optional starting point. The AI uses it to make your video feel more personal. If you prefer, you can skip the photo and create from text alone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long are the videos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our videos are 5-12 seconds long—perfect for messaging apps, social media stories, and quick birthday greetings that are easy to watch and share."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need video editing skills?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not at all! The tool is designed for people who don't want to learn complex editing software. Just write your birthday message, choose a style, and generate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I edit the video after generation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We focus on generation, not editing. If you want to add subtitles, trim, or make other edits, you can download the video and use tools like CapCut, Canva, or Premiere."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I control the video style?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Describe what you want in plain words: 'warm and cozy', 'fun and playful', 'elegant and minimal'. The AI interprets your description and creates a matching video."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <main class="wrap">
+      <!-- Hero 区域 - 页面首屏主要内容 -->
+      <section id="hero" class="hero section">
+        <h1>
+          Create Heartfelt <span class="highlight">Birthday Videos</span> in
+          Minutes
+        </h1>
+        <div class="description">
+          <p>
+            No editing skills? No problem. Turn your birthday message into a
+            beautiful 5-12 second video clip. Just describe the vibe, add an
+            optional photo, and let AI do the magic. Share instantly with
+            anyone, anywhere.
+          </p>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="/pricing" target="_self"
+            >Create Birthday Video</a
+          >
+        </div>
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          src="https://pub-387a24462b7d44e395219fe1c8295ad7.r2.dev/videos/873915363922d9807e831d7350e432f8.mp4"
+        ></video>
+        <p style="margin-top: 16px; font-size: 14px">
+          Join thousands creating birthday surprises
+        </p>
+      </section>
+
+      <!-- Introduce 区域 - 介绍为什么选择我们的工具 -->
+      <section id="introduce" class="section bg-muted">
+        <div class="label">Built for Quick, Personal Greetings</div>
+        <h2>Why Choose Our AI Birthday Video Maker?</h2>
+        <p style="max-width: 800px; margin: 0 auto 40px">
+          Most birthday tools expect you to be a video editor. We don't. Just
+          write your message, pick a style, and generate. Perfect for
+          last-minute surprises, long-distance wishes, or simply showing someone
+          you care.
+        </p>
+        <div class="grid grid-2">
+          <div class="feature-item">
+            <img
+              src="https://picsum.photos/seed/birthday-text/600/400"
+              alt="Text to video feature"
+            />
+            <h4>Text-First Creation</h4>
+            <p>
+              Write a short birthday greeting with the mood you want—sweet,
+              funny, elegant, or playful. Our AI transforms your words into a
+              5-12 second video without any timeline or complex controls.
+            </p>
+          </div>
+          <div class="feature-item">
+            <img
+              src="https://picsum.photos/seed/birthday-photo/600/400"
+              alt="Photo to video feature"
+            />
+            <h4>Add a Personal Photo</h4>
+            <p>
+              Upload a favorite photo to make your video feel like a treasured
+              memory. The AI uses your image as a starting point while keeping
+              the creation process simple.
+            </p>
+          </div>
+          <div class="feature-item">
+            <img
+              src="https://picsum.photos/seed/birthday-everyone/600/400"
+              alt="Birthday videos for everyone"
+            />
+            <h4>Perfect for Everyone</h4>
+            <p>
+              From kids' birthdays to workplace celebrations, from partners to
+              grandparents—create videos that fit any relationship and share
+              them on messages, stories, or group chats.
+            </p>
+          </div>
+          <div class="feature-item">
+            <img
+              src="https://picsum.photos/seed/birthday-iterate/600/400"
+              alt="Quick video iterations"
+            />
+            <h4>Quick Iterations</h4>
+            <p>
+              Not quite right? Change one word—the name, the joke, or the
+              theme—and regenerate. Our tool is designed for fast tweaks when
+              every minute counts.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits 区域 - 展示产品优势 -->
+      <section id="benefits" class="section">
+        <div class="label">Real Value for Real Moments</div>
+        <h2>Benefits for Our AI Birthday Video Maker</h2>
+        <p style="max-width: 800px; margin: 0 auto 40px">
+          Birthday videos shouldn't require a production team. Our AI Birthday
+          Video Maker keeps things simple: generate, review, and share. No
+          complicated exports, no timeline editing—just the essentials for
+          heartfelt moments.
+        </p>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <span>From Idea to Video in Minutes</span>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <p>
+                When you only have a message and a deadline, we help you produce
+                a beautiful birthday clip quickly. Perfect for last-minute
+                surprises, time-zone gifts, and spontaneous celebrations.
+              </p>
+              <img
+                src="/imgs/features/birthday-intro.png"
+                alt="Fast video creation"
+                style="width: 100%; border-radius: 12px; margin-top: 16px"
+              />
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <span>Personal Without the Complexity</span>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Use text only when you prefer privacy, or add a single photo
+                when you want more warmth. The flexibility means you choose what
+                feels comfortable for each occasion.
+              </p>
+              <img
+                src="https://picsum.photos/seed/birthday-personal/800/500"
+                alt="Personal and private"
+                style="width: 100%; border-radius: 12px; margin-top: 16px"
+              />
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+              <span>Perfect for Social Sharing</span>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <p>
+                A 5-12 second video is easy to send and rewatch. It fits
+                perfectly in DMs, Instagram stories, WhatsApp status, and small
+                celebrations without overwhelming anyone's feed.
+              </p>
+              <img
+                src="https://picsum.photos/seed/birthday-share/800/500"
+                alt="Easy social sharing"
+                style="width: 100%; border-radius: 12px; margin-top: 16px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Usage 区域 - 使用步骤说明 -->
+      <section id="usage" class="section bg-muted">
+        <h2 class="text-center">How It Works</h2>
+        <p class="text-center" style="max-width: 700px; margin: 0 auto 40px">
+          Create your birthday video in four simple steps. No learning curve, no
+          tutorials needed—just write, generate, and share.
+        </p>
+        <div class="steps">
+          <div class="step-item">
+            <img
+              src="https://picsum.photos/seed/birthday-step1/600/400"
+              alt="Write birthday message"
+            />
+            <div class="step-content">
+              <h3>Step 1: Write Your Message</h3>
+              <p>
+                Enter the recipient's name, your relationship, and the vibe you
+                want. Something like "for Mom, warm and grateful, golden
+                lighting" works perfectly.
+              </p>
+            </div>
+          </div>
+          <div class="step-item reverse">
+            <img
+              src="https://picsum.photos/seed/birthday-step2/600/400"
+              alt="Upload photo optional"
+            />
+            <div class="step-content">
+              <h3>Step 2: Add a Photo (Optional)</h3>
+              <p>
+                Upload a photo if you want the video to feel more personal. Skip
+                this step if you prefer a text-only creation—the AI works great
+                either way.
+              </p>
+            </div>
+          </div>
+          <div class="step-item">
+            <img
+              src="https://picsum.photos/seed/birthday-step3/600/400"
+              alt="Choose video style"
+            />
+            <div class="step-content">
+              <h3>Step 3: Choose Your Style</h3>
+              <p>
+                Pick a theme in your wording: cute, elegant, playful,
+                minimalist, or festive. The AI uses your description to shape
+                the look and motion of your video.
+              </p>
+            </div>
+          </div>
+          <div class="step-item reverse">
+            <img
+              src="https://picsum.photos/seed/birthday-step4/600/400"
+              alt="Generate and share video"
+            />
+            <div class="step-content">
+              <h3>Step 4: Generate & Share</h3>
+              <p>
+                Watch your video, then share it directly or download for later.
+                Not perfect? Tweak your message and regenerate until it feels
+                just right.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features 区域 - 核心功能特性 -->
+      <section id="features" class="section">
+        <h2 class="text-center">
+          Core Features for Our AI Birthday Video Maker
+        </h2>
+        <p class="text-center" style="max-width: 800px; margin: 0 auto 40px">
+          We focus on what matters most: helping you create heartfelt birthday
+          videos quickly and easily. No bloat, no complex editing tools—just the
+          essentials done right.
+        </p>
+        <div class="grid grid-3">
+          <div class="feature-item">
+            <h4>Text-to-Video Generation</h4>
+            <p>
+              Turn your birthday message into a 5-12 second video clip. Just
+              describe what you want, and our AI brings your words to life.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h4>Photo-to-Video Option</h4>
+            <p>
+              Add a cherished photo to anchor your video. Great for making the
+              greeting feel like a memory they'll treasure.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h4>Style Control via Prompts</h4>
+            <p>
+              Describe the style in plain language—sweet, humorous, calm,
+              bright, or elegant. No sliders or settings, just your words.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h4>Fast Regeneration</h4>
+            <p>
+              Change one detail and generate again. Perfect for iterating until
+              your video matches exactly what you envisioned.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h4>Short & Shareable Format</h4>
+            <p>
+              5-12 second videos are perfect for messaging apps, social stories,
+              and quick greetings that don't overstay their welcome.
+            </p>
+          </div>
+          <div class="feature-item">
+            <h4>Browser-Based Workflow</h4>
+            <p>
+              No app downloads, no software installs. Create birthday videos
+              right in your browser on desktop or mobile.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials 区域 - 用户评价 -->
+      <section id="testimonials" class="section">
+        <h2 class="text-center">What Our Users Say</h2>
+        <p class="text-center" style="max-width: 800px; margin: 0 auto 40px">
+          Real stories from people using our AI Birthday Video Maker for family
+          celebrations, friend surprises, and workplace moments.
+        </p>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <img src="/imgs/avatars/1.png" alt="Maya" />
+            <div class="quote">
+              "I was traveling and needed something meaningful for my partner's
+              birthday. Generated a sweet video in minutes and sent it right
+              away. The reaction was priceless!"
+            </div>
+            <div class="name">Maya</div>
+            <div class="role">Long-distance Partner</div>
+          </div>
+          <div class="testimonial-card">
+            <img src="/imgs/avatars/2.png" alt="Ethan" />
+            <div class="quote">
+              "My kids and I wrote a funny message together and added a family
+              photo. The video came out so good that my daughter watched it over
+              and over!"
+            </div>
+            <div class="name">Ethan</div>
+            <div class="role">Dad of Two</div>
+          </div>
+          <div class="testimonial-card">
+            <img src="/imgs/avatars/3.png" alt="Sofia" />
+            <div class="quote">
+              "I'm always the last-minute planner. This tool saved me from
+              scrambling—made a birthday clip in our group chat without any
+              editing apps!"
+            </div>
+            <div class="name">Sofia</div>
+            <div class="role">Friend Group Organizer</div>
+          </div>
+          <div class="testimonial-card">
+            <img src="/imgs/avatars/4.png" alt="Marcus" />
+            <div class="quote">
+              "For our teammate's birthday, I wanted something professional but
+              warm. Got a clean video in minutes that everyone loved in our
+              Slack channel."
+            </div>
+            <div class="name">Marcus</div>
+            <div class="role">Team Lead</div>
+          </div>
+          <div class="testimonial-card">
+            <img src="/imgs/avatars/5.png" alt="Rachel" />
+            <div class="quote">
+              "Short-form is my thing, so 5-12 seconds is perfect. I tested a
+              few vibes with quick prompt tweaks and picked the best one for my
+              mom's birthday story."
+            </div>
+            <div class="name">Rachel</div>
+            <div class="role">Content Creator</div>
+          </div>
+          <div class="testimonial-card">
+            <img src="/imgs/avatars/6.png" alt="James" />
+            <div class="quote">
+              "I didn't want to learn video editing just for one birthday post.
+              Wrote my message, hit generate, and had something shareable in
+              minutes!"
+            </div>
+            <div class="name">James</div>
+            <div class="role">College Student</div>
+          </div>
+          <div class="testimonial-card">
+            <img src="/imgs/avatars/7.png" alt="Lisa" />
+            <div class="quote">
+              "I handle birthday celebrations for our whole team. This tool is a
+              lifesaver—I can create personalized videos for each person without
+              spending hours on each one."
+            </div>
+            <div class="name">Lisa</div>
+            <div class="role">HR Coordinator</div>
+          </div>
+          <div class="testimonial-card">
+            <img src="/imgs/avatars/8.png" alt="David" />
+            <div class="quote">
+              "Living abroad, I can't be there for my grandparents' birthdays.
+              Made a heartfelt video with our old family photo—grandma cried
+              happy tears when she saw it!"
+            </div>
+            <div class="name">David</div>
+            <div class="role">International Student</div>
+          </div>
+          <div class="testimonial-card">
+            <img src="/imgs/avatars/9.png" alt="Emma" />
+            <div class="quote">
+              "Created my baby's first birthday video using photos from the past
+              year. It turned out so beautiful that I'm keeping it as a keepsake
+              forever!"
+            </div>
+            <div class="name">Emma</div>
+            <div class="role">New Mom</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ 区域 - 常见问题 -->
+      <section id="faq" class="section">
+        <h2 class="text-center">FAQ about AI Birthday Video Maker</h2>
+        <p class="text-center" style="max-width: 700px; margin: 0 auto 40px">
+          Everything you need to know about creating birthday videos with our AI
+          tool.
+        </p>
+        <div class="faq">
+          <details>
+            <summary>What is an AI Birthday Video Maker?</summary>
+            <p>
+              It's a tool that generates short birthday videos (5-12 seconds)
+              from your text message, and optionally from a photo you upload.
+              Instead of editing on a timeline, you describe what you want and
+              the AI creates it for you.
+            </p>
+          </details>
+          <details>
+            <summary>Can I create a video from a photo?</summary>
+            <p>
+              Yes! You can upload a photo as an optional starting point. The AI
+              uses it to make your video feel more personal. If you prefer, you
+              can skip the photo and create from text alone.
+            </p>
+          </details>
+          <details>
+            <summary>How long are the videos?</summary>
+            <p>
+              Our videos are 5-12 seconds long—perfect for messaging apps,
+              social media stories, and quick birthday greetings that are easy
+              to watch and share.
+            </p>
+          </details>
+          <details>
+            <summary>Do I need video editing skills?</summary>
+            <p>
+              Not at all! The tool is designed for people who don't want to
+              learn complex editing software. Just write your birthday message,
+              choose a style, and generate.
+            </p>
+          </details>
+          <details>
+            <summary>Can I edit the video after generation?</summary>
+            <p>
+              We focus on generation, not editing. If you want to add subtitles,
+              trim, or make other edits, you can download the video and use
+              tools like CapCut, Canva, or Premiere.
+            </p>
+          </details>
+          <details>
+            <summary>How do I control the video style?</summary>
+            <p>
+              Describe what you want in plain words: 'warm and cozy', 'fun and
+              playful', 'elegant and minimal'. The AI interprets your
+              description and creates a matching video.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- CTA 区域 - 行动号召 -->
+      <section id="cta" class="section bg-muted text-center">
+        <h2>Create Your Birthday Video Now</h2>
+        <p style="max-width: 700px; margin: 0 auto 32px">
+          Write your message, add a photo if you like, and generate a heartfelt
+          5-12 second birthday greeting in minutes. No editing skills required.
+        </p>
+        <div class="cta" style="justify-content: center">
+          <a class="btn primary" href="/pricing" target="_self">Get Started</a>
+        </div>
+      </section>
+
+      <!-- Logos 区域 - 合作伙伴/认证标识 -->
+      <section id="logos" class="section logos">
+        <a
+          href="https://www.tooljunction.io"
+          target="_blank"
+          rel="noopener"
+          title="Featured on ToolJunction"
+        >
+          <img
+            src="https://ik.imagekit.io/or8e5hp54/tj/badge.svg"
+            alt="Featured on ToolJunction"
+            style="height: 60px; width: auto"
+          />
+        </a>
+      </section>
+
+      <!-- Footer 页脚 -->
+      <footer>
+        <div>
+          © AI Birthday Video Maker · Create heartfelt videos in minutes
+        </div>
+      </footer>
+    </main>
+
+    <!-- JavaScript - 用于手风琴交互功能 -->
+    <script>
+      // 手风琴展开/收起功能
+      function toggleAccordion(header) {
+        // 获取当前手风琴项
+        const item = header.parentElement;
+        // 检查是否已经展开
+        const isActive = item.classList.contains("active");
+
+        // 关闭所有手风琴项
+        document
+          .querySelectorAll(".accordion-item")
+          .forEach(function (accordionItem) {
+            accordionItem.classList.remove("active");
+          });
+
+        // 如果当前项未展开，则展开它
+        if (!isActive) {
+          item.classList.add("active");
+        }
+      }
+    </script>
+  </body>
+</html>

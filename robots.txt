@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: CANONICAL_URL/sitemap.xml
